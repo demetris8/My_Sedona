@@ -1,0 +1,179 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-down {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-down-active {
+    width: 11px;
+    height: 10px;
+    background-position: -26px -5px;
+}
+
+.sprite-arrow-down-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -47px -5px;
+}
+
+.sprite-arrow-up {
+    width: 11px;
+    height: 10px;
+    background-position: -68px -5px;
+}
+
+.sprite-arrow-up-active {
+    width: 11px;
+    height: 10px;
+    background-position: -89px -5px;
+}
+
+.sprite-arrow-up-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -110px -5px;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -131px -5px;
+}
+
+.sprite-calendar-active {
+    width: 21px;
+    height: 22px;
+    background-position: -162px -5px;
+}
+
+.sprite-calendar-hover {
+    width: 21px;
+    height: 22px;
+    background-position: -193px -5px;
+}
+
+.sprite-checkbox {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -37px;
+}
+
+.sprite-checkbox-checked {
+    width: 26px;
+    height: 22px;
+    background-position: -37px -37px;
+}
+
+.sprite-facebook-icon {
+    width: 10px;
+    height: 19px;
+    background-position: -73px -37px;
+}
+
+.sprite-ha-logo {
+    width: 113px;
+    height: 39px;
+    background-position: -93px -37px;
+}
+
+.sprite-ha-logo-active {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -86px;
+}
+
+.sprite-ha-logo-hover {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -135px;
+}
+
+.sprite-icon-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -216px -37px;
+}
+
+.sprite-icon-minus-active {
+    width: 12px;
+    height: 3px;
+    background-position: -216px -50px;
+}
+
+.sprite-icon-minus-hover {
+    width: 12px;
+    height: 3px;
+    background-position: -216px -63px;
+}
+
+.sprite-icon-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -216px -76px;
+}
+
+.sprite-icon-plus-active {
+    width: 11px;
+    height: 11px;
+    background-position: -128px -97px;
+}
+
+.sprite-icon-plus-hover {
+    width: 11px;
+    height: 11px;
+    background-position: -149px -97px;
+}
+
+.sprite-img-1 {
+    width: 75px;
+    height: 72px;
+    background-position: -128px -118px;
+}
+
+.sprite-img-2 {
+    width: 74px;
+    height: 70px;
+    background-position: -238px -5px;
+}
+
+.sprite-img-3 {
+    width: 64px;
+    height: 76px;
+    background-position: -237px -85px;
+}
+
+.sprite-stars-2 {
+    width: 42px;
+    height: 17px;
+    background-position: -213px -171px;
+}
+
+.sprite-stars-3 {
+    width: 65px;
+    height: 17px;
+    background-position: -5px -198px;
+}
+
+.sprite-stars-4 {
+    width: 89px;
+    height: 17px;
+    background-position: -213px -198px;
+}
+
+.sprite-twitter-icon {
+    width: 17px;
+    height: 15px;
+    background-position: -265px -171px;
+}
+
+.sprite-youtube-icon {
+    width: 20px;
+    height: 16px;
+    background-position: -292px -171px;
+}
