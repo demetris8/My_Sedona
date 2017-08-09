@@ -24,12 +24,14 @@ header .logo {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -69px;
   width: 138px;
   height: 70px;
-  z-index: 5;
+  margin-left: -69px;
+  z-index: 10;
 }
-header ul {
+.main-menu {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -49,11 +51,9 @@ header ul {
 }
 
 .item--left {
-  float: left;
   margin-right: 110px;
 }
 .item--right {
-  float: right;
   margin-left: 110px;
 }
 .menu__item a {
@@ -74,12 +74,13 @@ header ul {
 /*Подвал*/
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   width: 1060px;
   padding: 35px 70px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .footer__visit {
-  float: left;
   width: 240px;
   padding-top: 10px;
   padding-left: 60px;
@@ -90,7 +91,6 @@ header ul {
   text-transform: uppercase;
 }
 .footer__social {
-  float: left;
   width: 400px;
   text-align: center;
   font-size: 0;
@@ -185,7 +185,9 @@ header ul {
 }
 
 .sedona-view {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 100%;
   min-height: 773px;
   padding-top: 1px;
@@ -198,7 +200,7 @@ header ul {
   width: 458px;
   height: 352px;
   margin-top: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -209,7 +211,6 @@ header ul {
   background-repeat: no-repeat;
 }
 .sedona-view__promo {
-  position: absolute;
   bottom: 0;
   width: 1200px;
 }
@@ -240,14 +241,16 @@ header ul {
 
 /*Причины*/
 .reasons {
-  display: table;
   width: 1200px;
 }
+.reasons__row {
+  display: flex;
+
+}
 .reason {
-  display: table-cell;
   width: 400px;
   padding: 50px;
-  min-height: 256px;
+  min-height: 156px;
   color: #fff;
   background-color: #81b3d2;
 }
@@ -290,9 +293,8 @@ header ul {
   float: right;
 }
 .reason__pic {
-  display: table-cell;
   width: 800px;
-  min-height: 256px;
+  height: 256px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -305,7 +307,6 @@ header ul {
 }
 /*Советы*/
 .tips {
-  display: table-cell;
   width: 400px;
   padding: 50px;
   padding-top: 60px;
@@ -584,19 +585,23 @@ label[for="full-age"] {
 
 /*inner.html*/
 .hotel-options {
+  display: flex;
   width: 100%;
   min-height: 217px;
   padding: 30px 70px;
   box-sizing: border-box;
   background: #485b64 url("../img/opt-bg.jpg") no-repeat;
 }
+.hotel-options fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 .infrastructure,
 .housing {
-  float: left;
   width: 240px;
   border: none;
 }
-
 .infrastructure label,
 .housing label {
   position: relative;
@@ -657,10 +662,9 @@ label[for="full-age"] {
 .housing input {
   display: none;
 }
-.cost {
-  float: right;
+.hotel-options .cost {
   width: 318px;
-  border: none;
+  margin-left: auto;
 }
 .range-value {
   position: relative;
@@ -752,6 +756,8 @@ label[for="full-age"] {
 /*сортировка*/
 
 .sorting {
+  display: flex;
+  justify-content: flex-start;
   width: 1054px;
   padding: 30px 73px;
   color: #000;
@@ -796,7 +802,7 @@ label[for="full-age"] {
   border: none;
 }
 .direction {
-  float: right;
+  margin-left: auto;
   padding-top: 12px;
   font-size: 0;
 }
@@ -846,6 +852,7 @@ label[for="full-age"] {
   border-bottom: 1px solid #e5e5e5;
 }
 .row {
+  display: flex;
   width: 100%;
   margin-bottom: 13.5px;
 }
@@ -860,21 +867,20 @@ label[for="full-age"] {
   margin-bottom: 0;
 }
 .hotel__item {
+  display: flex;
+  justify-content: space-between;
   width: 1056px;
 }
 .hotel-img {
-  float: left;
   width: 135px;
   height: 90px;
   margin-left: 30px;
 }
 .hotel-description {
-  float: right;
   width: 890px;
   min-height: 90px;
 }
 .hotel__title {
-  float: left;
   width: 360px;
   color: #000;
   font-size: 21px;
@@ -889,8 +895,8 @@ label[for="full-age"] {
   color: rgba(0, 0, 0, 0.3);
 }
 .rating-stars {
-  float: right;
   height: 17px;
+  margin-left: auto;
 }
 .stars-4 {
   width: 89px;
@@ -933,6 +939,7 @@ label[for="full-age"] {
 }
 .btn-more {
   width: 110px;
+  margin-right: 6px;
   background-color: #81b3d2;
 }
 .btn-more:hover {
@@ -954,8 +961,8 @@ label[for="full-age"] {
   background-color: #503e33;
 }
 .btn-rate {
-  float: right;
   width: 110px;
+  margin-left: auto;
   background-color: #f2f2f2;
   color: #666;
   font-weight: 400;
